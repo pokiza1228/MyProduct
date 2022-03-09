@@ -9,10 +9,7 @@
     @include reset-list;
 }
 .nav__item {
-    margin-right: 24px;
-    &:last-child {
-        margin-right: 0;
-    }
+    margin-left: 24px;
 }
 .nav__item-link {
     font-family: Poppins;
@@ -37,5 +34,13 @@
     &:hover {
         background-color:rgba(2, 137, 122, 1);
         color: #FFFFFF;
+    }
+}
+@media only screen and (max-width:$tablet) {
+    .nav__item {
+        margin-left: 10px;
+    }
+    .nav__link {
+        margin-right: 10px;
     }
 }
