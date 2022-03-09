@@ -4,11 +4,19 @@
     box-sizing: border-box;
 }
 body {
+    margin: 0;
+    padding: 0;
     margin-top: 82px;
+    
 }
 img {
     max-width: 100%;
 }
 a {
     text-decoration: none;
+}
+@media only screen and (max-width:$mobile) {
+    body {
+        margin-top: 70px;
+    }
 }

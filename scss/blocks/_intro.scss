@@ -58,3 +58,23 @@
         line-height: 28px;
     }
 }
+@media only screen and (max-width:$mobile) {
+    .intro {
+        background-position: center top 0px;
+        background-image: url("../img/intro-mobile-bg.png");
+        padding-top: 351px;
+        padding-bottom: 115px;
+        background-size: auto;
+    }
+    .intro__title {
+        text-align: center;
+        width: 100%;
+    }
+    .intro__text {
+        text-align: center;
+        width: 100%;
+    }
+    .intro__links {
+        justify-content: center;
+    }
+}

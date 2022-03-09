@@ -62,6 +62,9 @@
     }
 }
 @media only screen and (max-width:$mobile) {
+    .header {
+        padding: 17px 0 17px;
+    }
     .header__btn {
         display: none;
     }

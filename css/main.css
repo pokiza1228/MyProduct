@@ -349,6 +349,8 @@ template {
 }
 
 body {
+  margin: 0;
+  padding: 0;
   margin-top: 82px;
 }
 
@@ -358,6 +360,12 @@ img {
 
 a {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    margin-top: 70px;
+  }
 }
 
 .container {
@@ -448,6 +456,9 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .header {
+    padding: 17px 0 17px;
+  }
   .header__btn {
     display: none;
   }
@@ -613,6 +624,29 @@ a {
     width: 326px;
     font-size: 18px;
     line-height: 28px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .intro {
+    background-position: center top 0px;
+    background-image: url("../img/intro-mobile-bg.png");
+    padding-top: 351px;
+    padding-bottom: 115px;
+    background-size: auto;
+  }
+  .intro__title {
+    text-align: center;
+    width: 100%;
+  }
+  .intro__text {
+    text-align: center;
+    width: 100%;
+  }
+  .intro__links {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=main.css.map */
