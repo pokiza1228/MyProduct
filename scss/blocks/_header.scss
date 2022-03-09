@@ -1,0 +1,28 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 19px 20px 18px;
+}
+.header__logo {
+    display: flex;
+    align-items: center;
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 28px;
+    color: #173A56;
+}
+.header__logo-img {
+    margin-right: 16px;
+}
+.header__nav {
+    margin-left: auto;
+}
+.header__btn {
+    margin-left: 24px;
+    border: none;
+    background-color: transparent;
+    
+}
