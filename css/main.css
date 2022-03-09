@@ -371,6 +371,8 @@ a {
   position: fixed;
   top: 0;
   width: 100%;
+  background-color: #FFFFFF;
+  z-index: 9;
 }
 
 .header__container {
@@ -595,5 +597,22 @@ a {
 
 .inro__link-img {
   margin-right: 8px;
+}
+
+@media only screen and (max-width: 1137px) {
+  .intro {
+    background-size: 400px 400px;
+    background-position: right 0 top 50px;
+  }
+  .intro__title {
+    width: 369px;
+    font-size: 36px;
+    line-height: 60px;
+  }
+  .intro__text {
+    width: 326px;
+    font-size: 18px;
+    line-height: 28px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
