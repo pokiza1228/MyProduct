@@ -1,0 +1,41 @@
+.nav {
+    display: flex;
+    align-items: center;
+    
+}
+.nav__list {
+    display: flex;
+    align-items: center;
+    @include reset-list;
+}
+.nav__item {
+    margin-right: 24px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.nav__item-link {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 28px;
+    color: #22343D;
+}
+.nav__link {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #173A56;
+    padding: 10px 22px 9px 25px;
+    border: 1px solid #BCD0E5;
+    box-sizing: border-box;
+    border-radius: 4px;
+    margin: 0 24px;
+    &:hover {
+        background-color:rgba(2, 137, 122, 1);
+        color: #FFFFFF;
+    }
+}
