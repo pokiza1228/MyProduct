@@ -410,9 +410,43 @@ a {
   background-color: transparent;
 }
 
+.header__burger {
+  width: 21px;
+  height: 20px;
+  background-color: transparent;
+  border: none;
+  display: none;
+}
+
+.header__burger::after, .header__burger::before {
+  width: 100%;
+  height: 3px;
+  background-color: #173A56;
+  content: "";
+  display: block;
+}
+
+.header__inner {
+  width: 100%;
+  height: 3px;
+  background-color: #173A56;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
 @media only screen and (max-width: 1137px) {
   .header__btn {
     margin-left: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header__btn {
+    display: none;
+  }
+  .header__burger {
+    display: block;
   }
 }
 
@@ -476,6 +510,12 @@ a {
   }
   .nav__link {
     margin-right: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .nav {
+    display: none;
   }
 }
 
