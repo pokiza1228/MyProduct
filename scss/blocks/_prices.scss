@@ -1,7 +1,4 @@
-.prices {
-}
-.container {
-}
+
 .prices__container {
     text-align: center;
     padding-bottom: 150px;
@@ -94,4 +91,25 @@
             color: white; 
         }
     }
+}
+
+@media only screen and (max-width: $tablet) {
+    .prices__list {
+       column-gap: 20px;
+    }
+    .prices__item {
+        max-width: 300px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .prices__list {
+        width: 322px;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 32px;   
+    }
+
 }
