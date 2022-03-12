@@ -1,5 +1,8 @@
 .benifits {
-
+    background-image: url("../img/benifits-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    padding-bottom: 90px;
 }
 .benifits__title {
     font-weight: 700;
@@ -35,21 +38,25 @@
 .benifits__item--test {
     &::before {
         background-color: rgba(2, 137, 122, 1);
+        background-image: url("../img/benifits1.svg");
     }
 }
 .benifits__item--design {
     &::before {
         background-color: rgba(77, 141, 255, 1);
+        background-image: url("../img/benifits2.svg");
     }
 }
 .benifits__item--prefence {
     &::before {
         background-color: rgba(116, 10, 118, 1);
+        background-image: url("../img/benifits3.svg");
     }
 }
 .benifits__item--five {
     &::before {
         background-color: rgba(240, 62, 61, 1);
+        background-image: url("../img/benifits4.svg");
     }
 }
 .benifits__item-title {

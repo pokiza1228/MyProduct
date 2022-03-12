@@ -341,6 +341,37 @@ template {
   display: none;
 }
 
+/* poppins-regular - latin */
+/* poppins-regular - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/poppins-v19-latin-regular.woff2") format("woff2"), url("../fonts/poppins-v19-latin-regular.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-600 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/poppins-v19-latin-600.woff2") format("woff2"), url("../fonts/poppins-v19-latin-600.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* poppins-700 - latin */
+@font-face {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../fonts/poppins-v19-latin-700.woff2") format("woff2"), url("../fonts/poppins-v19-latin-700.woff") format("woff");
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -352,6 +383,8 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 82px;
+  background-color: #FFFFFF;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
 }
 
 img {
@@ -402,7 +435,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -493,7 +525,6 @@ a {
 }
 
 .nav__item-link {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -502,7 +533,6 @@ a {
 }
 
 .nav__link {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -537,7 +567,6 @@ a {
 }
 
 .main-link {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -565,7 +594,6 @@ a {
 
 .intro__title {
   width: 458px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -575,7 +603,6 @@ a {
 
 .intro__text {
   width: 458px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -596,7 +623,6 @@ a {
 
 .intro__link {
   margin-left: 30px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -650,6 +676,13 @@ a {
   }
 }
 
+.benifits {
+  background-image: url("../img/benifits-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 90px;
+}
+
 .benifits__title {
   font-weight: 700;
   font-size: 32px;
@@ -693,18 +726,22 @@ a {
 
 .benifits__item--test::before {
   background-color: #02897a;
+  background-image: url("../img/benifits1.svg");
 }
 
 .benifits__item--design::before {
   background-color: #4d8dff;
+  background-image: url("../img/benifits2.svg");
 }
 
 .benifits__item--prefence::before {
   background-color: #740a76;
+  background-image: url("../img/benifits3.svg");
 }
 
 .benifits__item--five::before {
   background-color: #f03e3d;
+  background-image: url("../img/benifits4.svg");
 }
 
 .benifits__item-title {
