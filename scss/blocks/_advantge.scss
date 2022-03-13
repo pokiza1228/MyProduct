@@ -1,0 +1,146 @@
+.advantge {
+    margin-top: 169px;
+    margin-bottom: 168px;
+}
+
+.advantge__list {
+    @include reset-list;
+
+}
+.advantge__item {
+    position: relative;
+    margin-bottom: 150px;
+    width: 100%;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &::after {
+        width: 543px;
+        height: 500px;
+        background-repeat: no-repeat;
+        display: block;
+        content: "";
+    }
+}
+.advantge__item--one {
+    padding-right: 635px;
+    &::after {
+        background-image: url("../img/advantge1.jpg");
+        height: 473px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+.advantge__item--two {
+    padding-left: 635px;
+    margin-bottom: 170px;
+    &::after {
+        background-image: url("../img/advantge2.jpg");
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    
+}
+.advantge__item--three {
+    padding-right: 700px;
+    &::after {
+        background-image: url("../img/advantge3.jpg");
+        height: 451px;
+        position: absolute;
+        top: 0;
+        right: 0
+    }
+}
+.advantge__info {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #22343D;
+    margin-bottom: 8px;
+}
+.advantge__list-title {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #22343D;
+    margin-bottom: 23px;
+}
+.advantge__list-title--menegment {
+    margin-bottom: 131px;
+}
+.advantge__item-title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+    margin-bottom: 12px;
+}
+.advantge__item-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #22343D;
+}
+.advantge__item-list {
+    @include reset-list;
+}
+.advantge__item-text--one {
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding-left: 65px;
+    position: relative;
+    &::before {
+        width: 50px;
+        height: 50px;
+        content: "";
+        border-radius: 14px;
+        background-image: url("../img/advantgee.svg");
+        background-position: center center;
+        background-color: rgba(255, 153, 0, 1);
+        display: block;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 25px);
+    }
+}
+.advantge__item-text--two {
+    margin-bottom: 30px;
+    padding-left: 65px;
+    position: relative;
+    &::before {
+        width: 50px;
+        height: 50px;
+        content: "";
+        border-radius: 14px;
+        background-image: url("../img/advantgee.svg");
+        background-position: center center;
+        background-color: rgba(240, 62, 61, 1);
+        display: block;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 25px);
+    }
+}
+.advantge__item-text--three {
+    padding-left: 65px;
+    position: relative;
+    &::before {
+        width: 50px;
+        height: 50px;
+        content: "";
+        border-radius: 14px;
+        background-image: url("../img/advantgee.svg");
+        background-position: center center;
+        background-color: rgba(77, 141, 255, 1);
+        display: block;
+        background-repeat: no-repeat;
+        position: absolute;
+        left: 0;
+        top: calc(50% - 25px);
+    }
+
+}

@@ -398,6 +398,17 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  clip: rect(0 0 0 0);
+  -webkit-clip-path: inset(50%);
+          clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 @media only screen and (max-width: 768px) {
   body {
     margin-top: 70px;
@@ -584,7 +595,7 @@ a {
 
 .main-link:hover {
   color: #02897a;
-  background-color: #FFFFFF;
+  background-color: transparent;
 }
 
 .intro {
@@ -803,6 +814,175 @@ a {
   .benifits__item {
     padding-top: 84px;
   }
+}
+
+.advantge {
+  margin-top: 169px;
+  margin-bottom: 168px;
+}
+
+.advantge__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantge__item {
+  position: relative;
+  margin-bottom: 150px;
+  width: 100%;
+}
+
+.advantge__item:last-child {
+  margin-bottom: 0;
+}
+
+.advantge__item::after {
+  width: 543px;
+  height: 500px;
+  background-repeat: no-repeat;
+  display: block;
+  content: "";
+}
+
+.advantge__item--one {
+  padding-right: 635px;
+}
+
+.advantge__item--one::after {
+  background-image: url("../img/advantge1.jpg");
+  height: 473px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.advantge__item--two {
+  padding-left: 635px;
+  margin-bottom: 170px;
+}
+
+.advantge__item--two::after {
+  background-image: url("../img/advantge2.jpg");
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.advantge__item--three {
+  padding-right: 700px;
+}
+
+.advantge__item--three::after {
+  background-image: url("../img/advantge3.jpg");
+  height: 451px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.advantge__info {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #22343D;
+  margin-bottom: 8px;
+}
+
+.advantge__list-title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #22343D;
+  margin-bottom: 23px;
+}
+
+.advantge__list-title--menegment {
+  margin-bottom: 131px;
+}
+
+.advantge__item-title {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+  margin-bottom: 12px;
+}
+
+.advantge__item-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #22343D;
+}
+
+.advantge__item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantge__item-text--one {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-left: 65px;
+  position: relative;
+}
+
+.advantge__item-text--one::before {
+  width: 50px;
+  height: 50px;
+  content: "";
+  border-radius: 14px;
+  background-image: url("../img/advantgee.svg");
+  background-position: center center;
+  background-color: #ff9900;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 25px);
+}
+
+.advantge__item-text--two {
+  margin-bottom: 30px;
+  padding-left: 65px;
+  position: relative;
+}
+
+.advantge__item-text--two::before {
+  width: 50px;
+  height: 50px;
+  content: "";
+  border-radius: 14px;
+  background-image: url("../img/advantgee.svg");
+  background-position: center center;
+  background-color: #f03e3d;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 25px);
+}
+
+.advantge__item-text--three {
+  padding-left: 65px;
+  position: relative;
+}
+
+.advantge__item-text--three::before {
+  width: 50px;
+  height: 50px;
+  content: "";
+  border-radius: 14px;
+  background-image: url("../img/advantgee.svg");
+  background-position: center center;
+  background-color: #4d8dff;
+  display: block;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 25px);
 }
 
 .clients__title {
