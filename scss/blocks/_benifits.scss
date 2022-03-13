@@ -97,6 +97,10 @@
  }
 }
 @media only screen and (max-width:$mobile) {
+    .benifits {
+        background-image: url("../img/benifits-mobile-bg.jpg");
+        background-size: contain;
+    }
     .benifits__item {
         padding-top: 84px;
     }
