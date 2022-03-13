@@ -78,3 +78,26 @@
    display: block;
    margin: 0 auto;
 }
+@media only screen and (max-width:$tablet) {
+   .benifits__list {
+       flex-direction: column;
+       align-items: center;
+       justify-content: center;
+   }
+   .benifits__item {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 37px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &::before {
+        left: calc(50% - 25px);
+    }
+ }
+}
+@media only screen and (max-width:$mobile) {
+    .benifits__item {
+        padding-top: 84px;
+    }
+}

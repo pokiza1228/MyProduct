@@ -769,6 +769,38 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1137px) {
+  .benifits__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .benifits__item {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+  .benifits__item:last-child {
+    margin-bottom: 0;
+  }
+  .benifits__item::before {
+    left: calc(50% - 25px);
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .benifits__item {
+    padding-top: 84px;
+  }
+}
+
 .clients__title {
   font-weight: 700;
   font-size: 34px;
