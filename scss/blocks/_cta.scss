@@ -31,6 +31,7 @@
     font-weight: 600;
     font-size: 20px;
     padding: 12px 34px;
+    border: 1px solid white;
     background-color: white;
     color: $accent;
     border-radius: 8px;
@@ -38,7 +39,7 @@
     &:hover {
         background-color: $accent;
         color: white;
-        border: 1px solid white;
+        
     }
 }
 
