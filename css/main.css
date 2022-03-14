@@ -338,6 +338,34 @@ template {
   display: none;
 }
 
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), url("../fonts/Poppins-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"), url("../fonts/Poppins-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-SemiBold.woff2") format("woff2"), url("../fonts/Poppins-SemiBold.woff") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"), url("../fonts/Poppins-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
 * {
   padding: 0;
   margin: 0;
@@ -348,6 +376,10 @@ body {
   margin: 0;
   padding: 0;
   margin-top: 82px;
+  font-family: "Poppins", "Arial", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #22343d;
 }
 
 img {
@@ -387,7 +419,6 @@ a {
 .header__logo {
   display: flex;
   align-items: center;
-  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -469,7 +500,6 @@ a {
 }
 
 .nav__item-link {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -478,7 +508,6 @@ a {
 }
 
 .nav__link {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -510,7 +539,6 @@ a {
   }
 }
 .main-link {
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -537,7 +565,6 @@ a {
 
 .intro__title {
   width: 458px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: bold;
   font-size: 40px;
@@ -547,7 +574,6 @@ a {
 
 .intro__text {
   width: 458px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
@@ -564,7 +590,6 @@ a {
 
 .intro__link {
   margin-left: 30px;
-  font-family: Poppins;
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -619,6 +644,13 @@ a {
     justify-content: center;
   }
 }
+.benifits {
+  background-image: url("../img/benifits-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  padding-bottom: 90px;
+}
+
 .benifits__title {
   font-weight: 700;
   font-size: 32px;
@@ -657,18 +689,22 @@ a {
 
 .benifits__item--test::before {
   background-color: #02897a;
+  background-image: url("../img/benifits1.svg");
 }
 
 .benifits__item--design::before {
   background-color: #4d8dff;
+  background-image: url("../img/benifits2.svg");
 }
 
 .benifits__item--prefence::before {
   background-color: #740a76;
+  background-image: url("../img/benifits3.svg");
 }
 
 .benifits__item--five::before {
   background-color: #f03e3d;
+  background-image: url("../img/benifits4.svg");
 }
 
 .benifits__item-title {
@@ -693,6 +729,159 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 1137px) {
+  .benifits__list {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .benifits__item {
+    width: 80%;
+    text-align: center;
+    margin-bottom: 37px;
+  }
+  .benifits__item:last-child {
+    margin-bottom: 0;
+  }
+  .benifits__item::before {
+    left: calc(50% - 25px);
+  }
+}
+@media only screen and (max-width: 768px) {
+  .benifits {
+    background-image: url("../img/benifits-mobile-bg.jpg");
+    background-size: contain;
+  }
+
+  .benifits__item {
+    padding-top: 84px;
+  }
+}
+.prices__container {
+  text-align: center;
+  padding-bottom: 150px;
+}
+
+.prices__title {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}
+
+.prices__description {
+  font-weight: 500;
+  margin: 8px 0 50px;
+}
+
+.prices__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+}
+
+.prices__item {
+  max-width: 322px;
+  border-radius: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  box-shadow: 2px 2px rgba(0, 0, 0, 0.25);
+}
+.prices__item--selected {
+  color: white;
+  background-color: #0e8784;
+}
+
+.prices__item-title {
+  font-weight: 700;
+  font-size: 24px;
+  margin-top: 24px;
+}
+
+.prices__item-description {
+  margin: 8px 0 16px;
+}
+
+.prices__item-cost {
+  color: #afafaf;
+  position: relative;
+}
+
+.prices__item-span {
+  font-weight: 700;
+  font-size: 76px;
+  line-height: 100px;
+  color: #0e8784;
+}
+.prices__item-span--selected {
+  color: white;
+}
+
+.prices__item-currency {
+  color: #0e8784;
+  font-weight: 700;
+  font-size: 24px;
+  position: absolute;
+  top: 25px;
+}
+.prices__item-currency--selected {
+  color: white;
+}
+
+.prices__item-info {
+  font-weight: 500;
+  line-height: 40px;
+  margin: 16px 0 38px;
+}
+
+.prices__button {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 11px 18px;
+  color: white;
+  background-color: #0e8784;
+  border: none;
+  border-radius: 8px;
+  margin-bottom: 32px;
+  border: 1px solid #0e8784;
+}
+.prices__button:hover {
+  border: 1px solid #0e8784;
+  background-color: white;
+  color: #0e8784;
+}
+.prices__button--selected {
+  background-color: white;
+  color: #0e8784;
+}
+.prices__button--selected:hover {
+  border: 1px solid white;
+  background-color: #0e8784;
+  color: white;
+}
+
+@media only screen and (max-width: 1137px) {
+  .prices__list {
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+
+  .prices__item {
+    max-width: 300px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .prices__list {
+    width: 322px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    row-gap: 32px;
+  }
+}
 .clients__title {
   font-weight: 700;
   font-size: 34px;
