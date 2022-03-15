@@ -19,12 +19,16 @@
 .stratege__list {
     @include reset-list;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
 .stratege__item {
-    width: calc((100% - 64px) / 3);
+    width: 348px;
     border-radius: 8px;
     border: 1px solid #DEDEDE;
+    margin-right: 32px;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 .stratege__description {
     padding: 24px 30px 40px 24px;
@@ -69,4 +73,34 @@
 }
 .stratege__btn--active {
     background-color: rgba(2, 137, 122, 1);
+}
+@media only screen and (max-width: $tablet) {
+    .stratege {
+        margin-bottom: 98px;
+    }
+    .stratege__title {
+        text-align: center;
+    }
+    .stratege__text {
+        text-align: center;
+    }
+    .stratege__list {
+        display: block;
+    }
+    .stratege__item {
+        margin: 0 auto;
+        margin-bottom: 30px;
+        &:last-child {
+            margin: 0 auto;
+        }
+    }
+    .stratege__list-btn {
+        display: none;
+    }
+}
+@media only screen and (max-width: $mobile) {
+    
+    .stratege__item {
+        margin-bottom: 16px;
+    }
 }
