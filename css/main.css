@@ -841,6 +841,7 @@ a {
   width: 543px;
   height: 500px;
   background-repeat: no-repeat;
+  background-position: center center;
   display: block;
   content: "";
 }
@@ -983,6 +984,30 @@ a {
   position: absolute;
   left: 0;
   top: calc(50% - 25px);
+}
+
+@media only screen and (max-width: 1137px) {
+  .advantge__item--one {
+    padding-right: unset;
+    padding-top: 600px;
+  }
+  .advantge__item--one::after {
+    right: calc(50% - 271px);
+  }
+  .advantge__item--two {
+    padding-left: unset;
+    padding-top: 600px;
+  }
+  .advantge__item--two::after {
+    left: calc(50% - 271px);
+  }
+  .advantge__item--three {
+    padding-right: unset;
+    padding-top: 600px;
+  }
+  .advantge__item--three::after {
+    right: calc(50% - 271px);
+  }
 }
 
 .clients__title {
