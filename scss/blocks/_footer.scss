@@ -1,0 +1,131 @@
+.footer {
+}
+.container {
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.header__logo {
+}
+.header__logo-img {
+}
+.footer__socials-list {
+    display: flex;
+    @include reset-list;
+    margin-top: 28px;
+}
+.footer__socials-item {
+    margin-right: 16px;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.footer__socials-link {
+}
+.footer__socials-img {
+    display: block;
+}
+.footer__nav {
+    display: flex;
+    margin-right: 86px;
+}
+
+.footer__resource-list {
+    
+    @include reset-list;
+    margin-right: 143px;
+}
+.footer__item {
+    margin-bottom: 5px;
+    line-height: 30px;
+    text-transform: capitalize;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.footer__link {
+    color: $dark-color;
+}
+.footer__list-title {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 8px;
+    line-height: 30px;
+}
+.footer__stuff-list {
+    @include reset-list;
+}
+
+.footer__form {
+}
+.footer__form-description {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    width: 280px;
+}
+.footer__input {
+    border: 1px solid rgba(188, 208, 229, 1);
+    padding: 10px 15px;
+    border-radius: 4px;
+    width: 325px;
+    margin: 24px 0 24px;
+}
+.footer__list-wrapper {
+    display: flex;
+}
+.footer__btn {
+    display: block;
+    padding: 8px 15px 7px;
+}
+
+@media only screen and (max-width: $tablet) {
+    .footer__container {
+        flex-direction: column;
+    }
+    .footer__list-wrapper {
+        justify-content: space-between;
+    }
+    .footer__wrapper {
+        display: flex;
+        margin-bottom: 30px;
+    }
+    .footer__socials-list {
+        margin: 0 0 0 50px;
+    }
+}
+
+@media only screen and (max-width: $mobile) {
+    .footer__container {
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer__wrapper {
+        display: block; 
+        margin-bottom: 0;
+    }
+    .footer__socials-list {
+        margin: 28px 0 0 0;
+    }
+    .footer__nav {
+        display: block;
+        margin: 32px 0;
+    }
+    .footer__resource-list {
+        margin: 0 0 32px;
+    }
+    .footer__form-description {
+        margin: 0 auto;
+    }
+    .footer__btn {
+        margin: 0 auto;
+    }
+
+    .footer__list-wrapper {
+        flex-direction: column;
+    }
+}
