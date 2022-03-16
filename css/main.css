@@ -1287,6 +1287,10 @@ a {
   }
 }
 
+.clients {
+  margin-bottom: 157px;
+}
+
 .clients__title {
   font-weight: 700;
   font-size: 34px;
@@ -1517,6 +1521,10 @@ a {
   }
 }
 
+.clients {
+  margin-bottom: 157px;
+}
+
 .clients__title {
   font-weight: 700;
   font-size: 34px;
@@ -1607,6 +1615,10 @@ a {
     width: 327px;
     margin: 0 auto;
   }
+}
+
+.cta {
+  margin-bottom: 156px;
 }
 
 .cta__container {
