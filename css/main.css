@@ -1011,6 +1011,146 @@ a {
   }
 }
 
+.suggestions {
+  padding-top: 53px;
+  background-image: url("../img/taklif-bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+.suggestions__title {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  text-align: center;
+  color: #22343D;
+  margin-bottom: 16px;
+}
+
+.suggestions__text {
+  width: 542px;
+  margin: 0 auto 32px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #22343D;
+}
+
+.suggestions__list-1 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions__item-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.suggestions__item-1:last-child {
+  margin-bottom: 0;
+}
+
+.suggestions__item-1:nth-child(2n) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.suggestions__item-1:nth-child(2n) .suggestions__info {
+  margin-right: 16px;
+}
+
+.suggestions__item-1:nth-child(2n-1) .suggestions__info {
+  margin-left: 16px;
+}
+
+.suggestions__item-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 24px;
+}
+
+.suggestions__item-2:last-child {
+  margin-bottom: 0;
+}
+
+.suggestions__item-2:nth-child(2n-1) {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+}
+
+.suggestions__item-2:nth-child(2n-1) .suggestions__info {
+  margin-right: 16px;
+}
+
+.suggestions__item-2:nth-child(2n) .suggestions__info {
+  margin-left: 16px;
+}
+
+.suggestions__info {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #2F281E;
+  padding: 15px 24px;
+  background-color: #FFFFFF;
+  -webkit-box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+          box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
+  border-radius: 26.5px;
+  position: relative;
+}
+
+.suggestions__info::after {
+  width: 17px;
+  height: 17px;
+  content: "";
+  background-color: #FFFFFF;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: calc(50% + 17px);
+  left: 32px;
+}
+
+.suggestions__info--1::after {
+  left: 190px;
+}
+
+.suggestions__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.suggestions__list-2 {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.suggestions__link {
+  display: block;
+  width: 216px;
+  margin: 48px auto 0;
+}
+
 .stratege {
   padding-top: 150px;
 }
@@ -1048,6 +1188,7 @@ a {
   border-radius: 8px;
   border: 1px solid #DEDEDE;
   margin-right: 32px;
+  overflow: hidden;
 }
 
 .stratege__item:last-child {
