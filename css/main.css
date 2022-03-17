@@ -1430,6 +1430,10 @@ a {
   margin: 16px 0;
 }
 
+.clients__item-profile {
+  margin-right: 14px;
+}
+
 .clients__div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1797,6 +1801,151 @@ a {
   }
 }
 
+.contact {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#F7F7F7), to(rgba(247, 247, 247, 0)));
+  background-image: linear-gradient(180deg, #F7F7F7 0%, rgba(247, 247, 247, 0) 100%);
+}
+
+.contact__container {
+  text-align: center;
+  padding-bottom: 51px;
+  padding-top: 53px;
+}
+
+.contact__title {
+  font-weight: 600;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.contact__heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+}
+
+.contact__description {
+  font-size: 18px;
+  max-width: 657px;
+  margin: 8px auto 32px;
+}
+
+.contact__btn {
+  padding: 11px 18px;
+  font-size: 18px;
+  border-radius: 8px;
+}
+
+.enterprise__container {
+  padding-top: 200px;
+  padding-bottom: 150px;
+}
+
+.enterprise__heading {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 51px;
+  text-align: center;
+}
+
+.enterprise__list {
+  position: relative;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.enterprise__list::before {
+  background-image: url("../../img/enterprise-img.svg");
+  display: block;
+  content: "";
+  width: 528px;
+  height: 392px;
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+
+.enterprise__item {
+  max-width: 540px;
+  margin: 63px 0 0 auto;
+  margin-bottom: 40px;
+}
+
+.enterprise__item:last-child {
+  margin-bottom: 0;
+}
+
+.enterprise__item--enterpreneur {
+  position: relative;
+}
+
+.enterprise__item--enterpreneur::before {
+  background-image: url("../img/enterprise-lift.svg");
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: -5px;
+  left: 0;
+  position: absolute;
+}
+
+.enterprise__item--accountants {
+  position: relative;
+}
+
+.enterprise__item--accountants::before {
+  background-image: url("../../img/accountants.svg");
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: -5px;
+  left: 0;
+}
+
+.enterprise__item--universities {
+  position: relative;
+}
+
+.enterprise__item--universities::before {
+  background-image: url("../../img/universities.svg");
+  position: absolute;
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  top: -5px;
+  left: 0;
+}
+
+.enterprise__item-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 36px;
+  margin: 0 0 23px 65px;
+}
+
+.enterprise__item-description {
+  line-height: 28px;
+  max-width: 533px;
+}
+
+@media only screen and (max-width: 1137px) {
+  .enterprise__list::before {
+    background-image: url("../../img/enterprise-mobile.svg");
+    width: 352px;
+    height: 288px;
+    position: static;
+    margin: 0 auto;
+  }
+  .enterprise__item {
+    margin: 50px auto;
+  }
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1959,143 +2108,144 @@ a {
   }
 }
 
-.contact__container {
-  text-align: center;
-  padding-bottom: 51px;
-  padding-top: 53px;
+@-webkit-keyframes info-open {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
-.contact__title {
-  font-weight: 600;
-  font-size: 24px;
-  margin-bottom: 16px;
+@keyframes info-open {
+  0% {
+    -webkit-transform: translateY(-20%);
+            transform: translateY(-20%);
+  }
+  50% {
+    -webkit-transform: translateY(10%);
+            transform: translateY(10%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
 }
 
-.contact__heading {
+.faq__container {
+  padding-top: 150px;
+  padding-bottom: 170px;
+}
+
+.faq__title {
   font-weight: 700;
   font-size: 34px;
   line-height: 51px;
-}
-
-.contact__description {
-  font-size: 18px;
-  max-width: 657px;
-  margin: 8px auto 32px;
-}
-
-.contact__btn {
-  padding: 11px 18px;
-  font-size: 18px;
-  border-radius: 8px;
-}
-
-.enterprise__container {
-  padding-top: 200px;
-  padding-bottom: 150px;
-}
-
-.enterprise__heading {
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 51px;
   text-align: center;
 }
 
-.enterprise__list {
-  position: relative;
+.faq__description {
+  font-size: 18px;
+  text-align: center;
+  margin: 8px auto 50px;
+}
+
+.faq__list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.enterprise__list::before {
-  background-image: url("../../img/enterprise-img.svg");
+.faq__item {
+  padding: 16px 0 16px;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.faq__item-btn {
+  font-weight: 500;
+  font-size: 18px;
+  border: none;
+  background-color: white;
+  margin-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.faq__btn-icon {
+  margin-right: 16px;
   display: block;
   content: "";
-  width: 528px;
-  height: 392px;
-  position: absolute;
-  top: 30px;
-  left: 0;
-}
-
-.enterprise__item {
-  max-width: 540px;
-  margin: 63px 0 0 auto;
-  margin-bottom: 40px;
-}
-
-.enterprise__item:last-child {
-  margin-bottom: 0;
-}
-
-.enterprise__item--enterpreneur {
+  width: 24px;
+  height: 24px;
+  background-color: #0e8784;
+  border-radius: 50%;
   position: relative;
 }
 
-.enterprise__item--enterpreneur::before {
-  background-image: url("../img/enterprise-lift.svg");
-  display: block;
+.faq__btn-icon::after {
+  width: 14px;
+  height: 2px;
+  background-color: white;
   content: "";
-  width: 50px;
-  height: 50px;
-  top: -5px;
-  left: 0;
+  display: block;
   position: absolute;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  top: 11px;
+  left: 5px;
 }
 
-.enterprise__item--accountants {
+.faq__btn-icon::before {
+  width: 14px;
+  height: 2px;
+  background-color: white;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 11px;
+  left: 5px;
+}
+
+.faq__btn-icon--opened {
+  display: block;
+  content: "";
+  width: 24px;
+  height: 24px;
+  background-color: #0e8784;
+  border-radius: 50%;
   position: relative;
 }
 
-.enterprise__item--accountants::before {
-  background-image: url("../../img/accountants.svg");
-  position: absolute;
-  display: block;
+.faq__btn-icon--opened::after {
+  display: none;
+}
+
+.faq__btn-icon--opened::before {
+  width: 14px;
+  height: 2px;
+  background-color: white;
   content: "";
-  width: 50px;
-  height: 50px;
-  top: -5px;
-  left: 0;
-}
-
-.enterprise__item--universities {
-  position: relative;
-}
-
-.enterprise__item--universities::before {
-  background-image: url("../../img/universities.svg");
-  position: absolute;
   display: block;
-  content: "";
-  width: 50px;
-  height: 50px;
-  top: -5px;
-  left: 0;
+  position: absolute;
+  top: 11px;
+  left: 5px;
 }
 
-.enterprise__item-title {
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 36px;
-  margin: 0 0 23px 65px;
+.faq__item-info {
+  max-width: 920px;
+  display: none;
 }
 
-.enterprise__item-description {
-  line-height: 28px;
-  max-width: 533px;
-}
-
-@media only screen and (max-width: 1137px) {
-  .enterprise__list::before {
-    background-image: url("../../img/enterprise-mobile.svg");
-    width: 352px;
-    height: 288px;
-    position: static;
-    margin: 0 auto;
-  }
-  .enterprise__item {
-    margin: 50px auto;
-  }
+.faq__item-info--opened {
+  display: block;
+  -webkit-animation: info-open 1s ease;
+          animation: info-open 1s ease;
 }
 /*# sourceMappingURL=main.css.map */
