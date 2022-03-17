@@ -1,3 +1,4 @@
+
 .nav {
     display: flex;
     align-items: center;
@@ -36,14 +37,33 @@
 }
 @media only screen and (max-width:$tablet) {
     .nav__item {
-        margin-left: 10px;
+        margin-left: 5px;
     }
     .nav__link {
-        margin-right: 10px;
+        margin-right: 5px;
+        margin-left: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
 }
 @media only screen and (max-width:$mobile) {
     .nav {
         display: none;
+    }
+    .header__nav--opened {
+        display: block;
+    }
+    .nav__list {
+        display: block;
+    }
+    .nav__item {
+        display: block;
+        margin: 0;
+        margin-bottom: 20px;
+    }
+    .nav__link {
+        margin: 0;
+        padding: 10px 22px 9px 25px;
+        margin-bottom: 20px;
     }
 }
