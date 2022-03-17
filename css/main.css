@@ -713,6 +713,12 @@ a {
   padding-bottom: 90px;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .benifits {
+    background-image: url("../img/benifits-bg@2x.jpg");
+  }
+}
+
 .benifits__title {
   font-weight: 700;
   font-size: 32px;
@@ -827,6 +833,15 @@ a {
     background-image: url("../img/benifits-mobile-bg.jpg");
     background-size: contain;
   }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .benifits {
+    background-image: url("../img/benifits-mobile-bg@2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .benifits__item {
     padding-top: 84px;
   }

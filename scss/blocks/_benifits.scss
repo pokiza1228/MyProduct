@@ -4,6 +4,19 @@
     background-position: center bottom;
     padding-bottom: 90px;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .benifits {
+        background-image: url("../img/benifits-bg@2x.jpg");
+    }
+}
+
 .benifits__title {
     font-weight: 700;
     font-size: 32px;
@@ -12,16 +25,19 @@
     color: #22343D;
     margin-bottom: 66px;
 }
+
 .benifits__list {
     display: flex;
     justify-content: space-between;
     @include reset-list;
     margin-bottom: 60px;
 }
+
 .benifits__item {
     width: calc((100% - (3 * 40px)) /4);
     padding-top: 88px;
     position: relative;
+
     &::before {
         position: absolute;
         top: 0;
@@ -35,30 +51,35 @@
         border-radius: 19px;
     }
 }
+
 .benifits__item--test {
     &::before {
         background-color: rgba(2, 137, 122, 1);
         background-image: url("../img/benifits1.svg");
     }
 }
+
 .benifits__item--design {
     &::before {
         background-color: rgba(77, 141, 255, 1);
         background-image: url("../img/benifits2.svg");
     }
 }
+
 .benifits__item--prefence {
     &::before {
         background-color: rgba(116, 10, 118, 1);
         background-image: url("../img/benifits3.svg");
     }
 }
+
 .benifits__item--five {
     &::before {
         background-color: rgba(240, 62, 61, 1);
         background-image: url("../img/benifits4.svg");
     }
 }
+
 .benifits__item-title {
     font-weight: 600;
     font-size: 22px;
@@ -66,41 +87,61 @@
     color: #22343D;
     margin-bottom: 13px;
 }
+
 .benifits__item-text {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #22343D;
 }
+
 .benifits__link {
-   width: 180px;
-   padding: 15px 32px 14px 32px;
-   display: block;
-   margin: 0 auto;
+    width: 180px;
+    padding: 15px 32px 14px 32px;
+    display: block;
+    margin: 0 auto;
 }
+
 @media only screen and (max-width:$tablet) {
-   .benifits__list {
-       flex-direction: column;
-       align-items: center;
-       justify-content: center;
-   }
-   .benifits__item {
-    width: 80%;
-    text-align: center;
-    margin-bottom: 37px;
-    &:last-child {
-        margin-bottom: 0;
+    .benifits__list {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    &::before {
-        left: calc(50% - 25px);
+
+    .benifits__item {
+        width: 80%;
+        text-align: center;
+        margin-bottom: 37px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            left: calc(50% - 25px);
+        }
     }
- }
 }
+
 @media only screen and (max-width:$mobile) {
     .benifits {
         background-image: url("../img/benifits-mobile-bg.jpg");
         background-size: contain;
     }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        .benifits {
+            background-image: url("../img/benifits-mobile-bg@2x.jpg");
+        }
+    }
+
     .benifits__item {
         padding-top: 84px;
     }
