@@ -1,0 +1,85 @@
+.enterprise__container {
+    text-align: center;
+}
+.enterprise__title {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 16px;
+}
+.enterprise__heading {
+    font-weight: 700;
+    font-size: 34px;
+    line-height: 51px;
+}
+.enterprise__description {
+    font-size: 18px;
+    width: 657px;
+    margin: 8px 0 32px;
+}
+.enterprise__btn {
+    padding: 11px 18px;
+    font-size: 18px;
+    border-radius: 8px;
+}
+.enterprise__list {
+    @include reset-list;
+    width: 540px;
+    text-align: left;
+    margin-left: auto;
+}
+.enterprise__item {
+    margin-bottom: 40px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &--enterpreneur{
+    position: relative;
+        &::before {
+            background-image: url("../img/enterprise-lift.svg");
+            display: block;
+            content: ('');
+            width: 50px;
+            height: 50px;
+            top: -5px;
+            left: 0;
+            position: absolute;
+        }  
+    } 
+    &--accountants {
+        position: relative;
+        &::before {
+            background-image: url("../../img/accountants.svg");
+            position: absolute;
+            display: block;
+            content: ('');
+            width: 50px;
+            height: 50px;
+            top: -5px;
+            left: 0;
+        }       
+    }
+    &--universities {
+        position: relative;
+        &::before {
+            background-image: url("../../img/universities.svg");
+            position: absolute;
+            display: block;
+            content: ('');
+            width: 50px;
+            height: 50px;
+            top: -5px;
+            left: 0;
+        }
+    }
+}
+
+.enterprise__item-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin: 0 0 23px 65px;
+}
+.enterprise__item-description {
+    line-height: 28px;
+    width: 533px;
+}
