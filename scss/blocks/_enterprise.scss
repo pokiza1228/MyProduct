@@ -1,33 +1,36 @@
 .enterprise__container {
-    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 150px;
+    
+    
+   
 }
-.enterprise__title {
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 16px;
-}
+
 .enterprise__heading {
     font-weight: 700;
     font-size: 34px;
     line-height: 51px;
+    text-align: center
 }
-.enterprise__description {
-    font-size: 18px;
-    width: 657px;
-    margin: 8px 0 32px;
-}
-.enterprise__btn {
-    padding: 11px 18px;
-    font-size: 18px;
-    border-radius: 8px;
-}
-.enterprise__list {
+
+
+.enterprise__list {position: relative;
     @include reset-list;
-    width: 540px;
-    text-align: left;
-    margin-left: auto;
+    
+    &::before {
+        background-image: url("../../img/enterprise-img.svg");
+        display: block;
+        content: ('');
+        width: 528px;
+        height: 392px;
+        position: absolute;
+        top: 30px;
+        left: 0;
+    }
 }
 .enterprise__item {
+    max-width: 540px;
+    margin: 63px 0 0 auto;
     margin-bottom: 40px;
     &:last-child {
         margin-bottom: 0;
@@ -81,5 +84,20 @@
 }
 .enterprise__item-description {
     line-height: 28px;
-    width: 533px;
+    max-width: 533px;
+}
+
+@media only screen and (max-width: $tablet) {
+    .enterprise__list {
+        &::before {
+            background-image: url("../../img/enterprise-mobile.svg");
+            width: 352px;
+            height: 288px;
+            position: static;
+            margin: 0 auto;
+        }
+    }
+    .enterprise__item {
+        margin: 50px auto;
+    }
 }
