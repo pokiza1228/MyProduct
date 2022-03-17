@@ -711,6 +711,7 @@ a {
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 90px;
+  margin-top: 115px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
