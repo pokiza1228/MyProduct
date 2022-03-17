@@ -68,14 +68,12 @@
         padding: 17px 0 17px;
     }
     .header__nav {
-        
         position: absolute;
         top: 100%;
         right: 0;
         width: 100%;
         text-align: center;
         height: calc(100vh - 70px);
-       
         flex-direction: column;
         z-index: 9;
         background-color: #fff;
@@ -85,8 +83,5 @@
     }
     .header__burger {
         display: block;
-    }
-    .header__nav--opened {
-        
     }
 }
