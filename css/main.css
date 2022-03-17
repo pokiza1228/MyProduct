@@ -603,8 +603,15 @@ a {
   padding-top: 145px;
   padding-bottom: 219px;
   background-image: url("../img/intro-bg.png");
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: right 0 top 0px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .intro {
+    background-image: url("../../img/intro-bg@2x.png");
+  }
 }
 
 .intro__title {
@@ -674,8 +681,16 @@ a {
     background-image: url("../img/intro-mobile-bg.png");
     padding-top: 351px;
     padding-bottom: 115px;
-    background-size: auto;
   }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .intro {
+    background-image: url("../../img/intro-mobile-bg@2x.png");
+  }
+}
+
+@media only screen and (max-width: 768px) {
   .intro__title {
     text-align: center;
     width: 100%;

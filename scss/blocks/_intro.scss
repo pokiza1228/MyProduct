@@ -2,9 +2,23 @@
     padding-top: 145px;
     padding-bottom: 219px;
     background-image: url("../img/intro-bg.png");
+    background-size: contain;
     background-repeat: no-repeat;
     background-position: right 0 top 0px;
 }
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .intro {
+        background-image: url("../../img/intro-bg@2x.png");
+    }
+}
+
 .intro__title {
     width: 458px;
     font-style: normal;
@@ -13,6 +27,7 @@
     line-height: 60px;
     color: #22343D;
 }
+
 .intro__text {
     width: 458px;
     font-style: normal;
@@ -23,10 +38,12 @@
     margin-top: 18px;
     margin-bottom: 24px;
 }
+
 .intro__links {
     display: flex;
     align-items: center;
 }
+
 .intro__link {
     margin-left: 30px;
     font-style: normal;
@@ -36,41 +53,60 @@
     text-decoration-line: underline;
     color: #02897A;
 }
+
 .inro__link-img {
     margin-right: 8px;
 }
+
 @media only screen and (max-width:$tablet) {
     .intro {
         background-size: 400px 400px;
         background-position: right 0 top 50px;
     }
+
     .intro__title {
         width: 369px;
         font-size: 36px;
         line-height: 60px;
     }
+
     .intro__text {
         width: 326px;
         font-size: 18px;
         line-height: 28px;
     }
 }
+
 @media only screen and (max-width:$mobile) {
     .intro {
         background-position: center top 0px;
         background-image: url("../img/intro-mobile-bg.png");
         padding-top: 351px;
         padding-bottom: 115px;
-        background-size: auto;
     }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        .intro {
+            background-image: url("../../img/intro-mobile-bg@2x.png");
+        }
+    }
+
     .intro__title {
         text-align: center;
         width: 100%;
     }
+
     .intro__text {
         text-align: center;
         width: 100%;
     }
+
     .intro__links {
         justify-content: center;
     }
