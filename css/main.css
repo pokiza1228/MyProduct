@@ -1118,6 +1118,12 @@ a {
   background-position: center top;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .suggestions {
+    background-image: url("../img/taklif-bg@2x.jpg");
+  }
+}
+
 .suggestions__title {
   font-weight: 700;
   font-size: 32px;
@@ -1249,6 +1255,54 @@ a {
   display: block;
   width: 216px;
   margin: 48px auto 0;
+}
+
+@media only screen and (max-width: 1137px) {
+  .suggestions__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .suggestions__list-2 {
+    margin-top: 30px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .suggestions {
+    background-image: url("../img/taklif-mb-bg.jpg");
+    background-size: cover;
+    padding-top: 75px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .suggestions {
+    background-image: url("../img/taklif-mb-bg@2x.jpg");
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .suggestions__list-2 {
+    margin-top: 32px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
 }
 
 .stratege {

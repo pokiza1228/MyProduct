@@ -5,6 +5,18 @@
     background-position: center top;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min--moz-device-pixel-ratio: 2),
+only screen and (-o-min-device-pixel-ratio: 2/1),
+only screen and (min-device-pixel-ratio: 2),
+only screen and (min-resolution: 192dpi),
+only screen and (min-resolution: 2dppx) {
+
+    .suggestions {
+        background-image: url("../img/taklif-bg@2x.jpg");
+    }
+}
+
 .suggestions__title {
     font-weight: 700;
     font-size: 32px;
@@ -13,6 +25,7 @@
     color: #22343D;
     margin-bottom: 16px;
 }
+
 .suggestions__text {
     width: 542px;
     margin: 0 auto 32px;
@@ -22,43 +35,55 @@
     text-align: center;
     color: #22343D;
 }
+
 .suggestions__list-1 {
     @include reset-list;
 }
+
 .suggestions__item-1 {
     display: flex;
     align-items: center;
     margin-bottom: 24px;
+
     &:last-child {
         margin-bottom: 0;
     }
+
     &:nth-child(2n) {
         flex-direction: row-reverse;
     }
+
     &:nth-child(2n) .suggestions__info {
         margin-right: 16px;
     }
+
     &:nth-child(2n-1) .suggestions__info {
         margin-left: 16px;
     }
 }
+
 .suggestions__item-2 {
     display: flex;
     align-items: center;
     margin-bottom: 24px;
+
     &:last-child {
         margin-bottom: 0;
     }
+
     &:nth-child(2n-1) {
         flex-direction: row-reverse;
     }
+
     &:nth-child(2n-1) .suggestions__info {
         margin-right: 16px;
     }
+
     &:nth-child(2n) .suggestions__info {
         margin-left: 16px;
     }
 }
+
 .suggestions__info {
     font-weight: 500;
     font-size: 16px;
@@ -67,8 +92,9 @@
     padding: 15px 24px;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
-    border-radius: 26.5px; 
+    border-radius: 26.5px;
     position: relative;
+
     &::after {
         width: 17px;
         height: 17px;
@@ -81,16 +107,19 @@
         left: 32px;
     }
 }
+
 .suggestions__info--1 {
-   &::after {
-       left: 190px;
-       
-   }
-} 
+    &::after {
+        left: 190px;
+
+    }
+}
+
 .suggestions__content {
     display: flex;
     justify-content: space-between;
 }
+
 .suggestions__list-2 {
     @include reset-list;
 }
@@ -99,4 +128,44 @@
     display: block;
     width: 216px;
     margin: 48px auto 0;
+}
+
+@media only screen and (max-width:$tablet) {
+    .suggestions__content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .suggestions__list-2 {
+        margin-top: 30px;
+    }
+}
+
+@media only screen and (max-width:$mobile) {
+    .suggestions {
+        background-image: url("../img/taklif-mb-bg.jpg");
+        background-size: cover;
+        padding-top: 75px;
+    }
+
+    @media only screen and (-webkit-min-device-pixel-ratio: 2),
+    only screen and (min--moz-device-pixel-ratio: 2),
+    only screen and (-o-min-device-pixel-ratio: 2/1),
+    only screen and (min-device-pixel-ratio: 2),
+    only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+
+        .suggestions {
+            background-image: url("../img/taklif-mb-bg@2x.jpg");
+        }
+    }
+
+    .suggestions__list-2 {
+        margin-top: 32px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
 }
