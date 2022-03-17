@@ -52,6 +52,9 @@ only screen and (min-resolution: 2dppx) {
     line-height: 24px;
     text-decoration-line: underline;
     color: #02897A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .inro__link-img {
