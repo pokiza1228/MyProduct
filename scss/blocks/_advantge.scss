@@ -23,7 +23,7 @@
         height: 500px;
         background-repeat: no-repeat;
         background-position: center center;
-        background-size: contain;
+        background-size: cover;
         display: block;
         content: "";
     }
@@ -242,10 +242,17 @@ only screen and (min-resolution: 2dppx) {
 }
 
 @media only screen and (max-width:$mobile) {
+    .advantge__item {
+        &::after {
+            width: 350px;
+            height: 292px;
+        }
+    }
     .advantge__item--one {
         padding-top: 500px;
         &::after {
             background-image: url("../../img/advantge1-mb.png");
+            left: calc(50% - 150px);
         }
     }
 
@@ -267,6 +274,7 @@ only screen and (min-resolution: 2dppx) {
         padding-top: 500px;
         &::after {
             background-image: url("../../img/advange2-mb.png");
+            left: calc(50% - 150px);
         }
     }
 
@@ -289,6 +297,7 @@ only screen and (min-resolution: 2dppx) {
         padding-top: 500px;
         &::after {
             background-image: url("../../img/advange3-mb.png");
+            left: calc(50% - 150px);
         }
     }
 

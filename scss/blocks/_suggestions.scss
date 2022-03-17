@@ -92,7 +92,7 @@ only screen and (min-resolution: 2dppx) {
     padding: 15px 24px;
     background-color: #FFFFFF;
     box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
-    border-radius: 26.5px;
+    border-radius: 26px;
     position: relative;
 
     &::after {
@@ -159,13 +159,18 @@ only screen and (min-resolution: 2dppx) {
             background-image: url("../img/taklif-mb-bg@2x.jpg");
         }
     }
-
+    .suggestions__text {
+        width: 100%;
+    }
     .suggestions__list-2 {
         margin-top: 32px;
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: column-reverse;
+    }
+    .suggestions__info {
+        padding: 15px 5px;
     }
 
 }

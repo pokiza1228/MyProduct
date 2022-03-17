@@ -912,7 +912,7 @@ a {
   height: 500px;
   background-repeat: no-repeat;
   background-position: center center;
-  background-size: contain;
+  background-size: cover;
   display: block;
   content: "";
 }
@@ -1100,11 +1100,16 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .advantge__item::after {
+    width: 350px;
+    height: 292px;
+  }
   .advantge__item--one {
     padding-top: 500px;
   }
   .advantge__item--one::after {
     background-image: url("../../img/advantge1-mb.png");
+    left: calc(50% - 150px);
   }
 }
 
@@ -1120,6 +1125,7 @@ a {
   }
   .advantge__item--two::after {
     background-image: url("../../img/advange2-mb.png");
+    left: calc(50% - 150px);
   }
 }
 
@@ -1135,6 +1141,7 @@ a {
   }
   .advantge__item--three::after {
     background-image: url("../../img/advange3-mb.png");
+    left: calc(50% - 150px);
   }
 }
 
@@ -1249,7 +1256,7 @@ a {
   background-color: #FFFFFF;
   -webkit-box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
           box-shadow: 0px 2px 15px rgba(23, 58, 86, 0.1);
-  border-radius: 26.5px;
+  border-radius: 26px;
   position: relative;
 }
 
@@ -1320,6 +1327,9 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
+  .suggestions__text {
+    width: 100%;
+  }
   .suggestions__list-2 {
     margin-top: 32px;
     display: -webkit-box;
@@ -1335,6 +1345,9 @@ a {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
+  }
+  .suggestions__info {
+    padding: 15px 5px;
   }
 }
 
