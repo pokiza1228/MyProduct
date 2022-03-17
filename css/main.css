@@ -1664,6 +1664,10 @@ a {
   margin: 16px 0;
 }
 
+.clients__item-profile {
+  margin-right: 14px;
+}
+
 .clients__div {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1730,10 +1734,11 @@ a {
 }
 
 .cta__container::after {
-  background-image: url(/img/cta-img.svg);
+  background-image: url("../../img/cta-img.png");
   display: block;
+  background-size: cover;
   content: "";
-  width: 400px;
+  width: 351px;
   height: 331px;
   background-repeat: no-repeat;
   position: absolute;
@@ -1780,6 +1785,8 @@ a {
   }
   .cta__container::after {
     position: static;
+    max-width: 301px;
+    max-height: 301px;
   }
   .cta__description {
     width: 328px;
