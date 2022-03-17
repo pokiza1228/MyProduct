@@ -18,6 +18,8 @@ only screen and (min-resolution: 2dppx) {
 }
 
 .benifits__title {
+    width: 593px;
+    margin: 0 auto;
     font-weight: 700;
     font-size: 32px;
     line-height: 48px;
@@ -103,6 +105,9 @@ only screen and (min-resolution: 2dppx) {
 }
 
 @media only screen and (max-width:$tablet) {
+    .benifits__title {
+        width: 100%;
+    }
     .benifits__list {
         flex-direction: column;
         align-items: center;

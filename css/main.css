@@ -720,6 +720,8 @@ a {
 }
 
 .benifits__title {
+  width: 593px;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 32px;
   line-height: 48px;
@@ -803,6 +805,9 @@ a {
 }
 
 @media only screen and (max-width: 1137px) {
+  .benifits__title {
+    width: 100%;
+  }
   .benifits__list {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
