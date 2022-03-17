@@ -1738,7 +1738,7 @@ a {
 }
 
 .cta__container::after {
-  background-image: url("../../img/cta-img.png");
+  background-image: url("../img/cta-img.png");
   display: block;
   background-size: cover;
   content: "";
@@ -1749,6 +1749,12 @@ a {
   right: 36px;
   top: 14px;
   margin: 0 auto;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .cta__container::after {
+    background-image: url("../img/cta-img@2x.png");
+  }
 }
 
 .cta__description {
@@ -1808,7 +1814,6 @@ a {
 
 .contact__container {
   text-align: center;
-  padding-bottom: 51px;
   padding-top: 53px;
 }
 
@@ -2139,7 +2144,6 @@ a {
 }
 
 .faq__container {
-  padding-top: 150px;
   padding-bottom: 170px;
 }
 
