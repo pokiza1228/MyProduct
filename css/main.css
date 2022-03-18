@@ -674,6 +674,7 @@ a {
   background-repeat: no-repeat;
   background-position: center bottom;
   padding-bottom: 90px;
+  margin-top: 115px;
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
@@ -1049,6 +1050,11 @@ a {
   background-position: center top;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .suggestions {
+    background-image: url("../img/taklif-bg@2x.jpg");
+  }
+}
 .suggestions__title {
   font-weight: 700;
   font-size: 32px;
@@ -1154,6 +1160,37 @@ a {
   margin: 48px auto 0;
 }
 
+@media only screen and (max-width: 1137px) {
+  .suggestions__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .suggestions__list-2 {
+    margin-top: 30px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .suggestions {
+    background-image: url("../img/taklif-mb-bg.jpg");
+    background-size: cover;
+    padding-top: 75px;
+  }
+}
+@media only screen and (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-device-pixel-ratio: 2), only screen and (max-width: 768px) and (min-resolution: 192dpi), only screen and (max-width: 768px) and (min-resolution: 2dppx) {
+  .suggestions {
+    background-image: url("../img/taklif-mb-bg@2x.jpg");
+  }
+}
+@media only screen and (max-width: 768px) {
+  .suggestions__list-2 {
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
 .stratege {
   padding-top: 150px;
 }
@@ -1322,10 +1359,6 @@ a {
   margin: 16px 0;
 }
 
-.clients__item-profile {
-  margin-right: 14px;
-}
-
 .clients__div {
   display: flex;
 }
@@ -1334,6 +1367,7 @@ a {
   font-weight: 600;
   color: #0e8784;
   width: 81px;
+  margin-left: 16px;
 }
 
 .clients__item-profession {
@@ -1376,12 +1410,12 @@ a {
 }
 
 .prices__title {
-  font-weight: 700;
+  font-weight: 600;
   font-size: 34px;
   line-height: 51px;
 }
 
-.price__subtitle {
+.prices__subtitle {
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -1541,10 +1575,6 @@ a {
   margin: 16px 0;
 }
 
-.clients__item-profile {
-  margin-right: 14px;
-}
-
 .clients__div {
   display: flex;
 }
@@ -1553,6 +1583,7 @@ a {
   font-weight: 600;
   color: #0e8784;
   width: 81px;
+  margin-left: 16px;
 }
 
 .clients__item-profession {
@@ -1602,7 +1633,7 @@ a {
   position: relative;
 }
 .cta__container::after {
-  background-image: url("../../img/cta-img.png");
+  background-image: url("../img/cta-img.png");
   display: block;
   background-size: cover;
   content: "";
@@ -1615,6 +1646,11 @@ a {
   margin: 0 auto;
 }
 
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .cta__container::after {
+    background-image: url("../img/cta-img@2x.png");
+  }
+}
 .cta__description {
   font-weight: 600;
   font-size: 32px;
@@ -1670,7 +1706,6 @@ a {
 
 .contact__container {
   text-align: center;
-  padding-bottom: 51px;
   padding-top: 53px;
 }
 
@@ -1966,7 +2001,6 @@ a {
   }
 }
 .faq__container {
-  padding-top: 150px;
   padding-bottom: 170px;
 }
 

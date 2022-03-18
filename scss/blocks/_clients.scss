@@ -1,9 +1,7 @@
 .clients {
     margin-bottom: 157px;
 }
-.clients__container {
-    
-}
+
 .clients__title {
     font-weight: 700;
     font-size: 34px;
@@ -29,8 +27,7 @@
     padding: 28px 26px 23px;
     border-radius: 5px;
 }
-.clients__item-stars {
-}
+
 .clients__item-description {
     line-height: 28px;
     color: rgba(115, 115, 115, 1);
@@ -38,9 +35,7 @@
     margin: 16px 0;
 }
 
-.clients__item-profile {
-    margin-right: 14px;
-}
+
 .clients__div {
     display: flex;
 } 
@@ -48,10 +43,14 @@
     font-weight: 600;
     color: $accent;
     width: 81px;
+    margin-left: 16px;
+    
 }
+
 .clients__item-profession {
     color: black;
     font-weight: 500;
+    
 }
 
 @media only screen and (max-width: $tablet) {
