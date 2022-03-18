@@ -1705,6 +1705,22 @@ a {
     flex-direction: column;
   }
 }
+@-webkit-keyframes info-open {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes info-open {
+  0% {
+    transform: translateY(-30%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
 .faq__container {
   padding-top: 150px;
   padding-bottom: 170px;
@@ -1740,9 +1756,11 @@ a {
   border: none;
   background-color: transparent;
   margin-bottom: 14px;
+  display: flex;
 }
 
 .faq__btn-icon {
+  margin-right: 16px;
   display: block;
   content: "";
   width: 24px;
@@ -1803,4 +1821,6 @@ a {
 
 .faq__item-info--opened {
   display: block;
+  -webkit-animation: info-open 1s ease;
+          animation: info-open 1s ease;
 }/*# sourceMappingURL=main.css.map */

@@ -5,3 +5,5 @@ faq.addEventListener("click", function() {
     info.classList.toggle("faq__item-info--opened");
     icon.classList.toggle("faq__btn-icon--opened")
 });
+
+
