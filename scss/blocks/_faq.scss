@@ -1,11 +1,17 @@
 @keyframes info-open {
     0% {
-        transform: translateY(-30%);
+        transform: translateY(-20%);
+    }
+     50% {
+         transform: translateY(10%);
     }
     100% {
         transform: translateY(0%);
     }
+    
 }
+
+
 
 
 
@@ -36,7 +42,7 @@
     font-weight: 500;
     font-size: 18px;
     border: none;
-    background-color: transparent;
+    background-color: white;
     margin-bottom: 14px;
    display: flex;
 }
@@ -104,5 +110,5 @@
 .faq__item-info--opened {
     display: block;
     animation: info-open 1s ease;
-    
+   
 }
